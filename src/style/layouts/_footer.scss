@@ -1,0 +1,83 @@
+.footer_wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('../../assets/dam2.png');
+    background-position: center;
+    z-index: 0;
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba($color: $cream, $alpha: 0.5);
+        z-index: 1;
+    }
+}
+
+.footer_text {
+    position: absolute;
+    z-index: 2;
+    font-family: 'Boogie';
+    color: $navy;
+    font-size: 20px;
+    bottom: 15px;
+}
+
+.github_link {
+    position: absolute;
+    z-index: 2;
+    bottom: 60px;
+    left: 662px;
+    transition: all 0.3s;
+
+    @include tablet-down {
+        bottom: 60px;
+        left: 315px;
+    }
+
+    @include mobile-down {
+        bottom: 60px;
+        left: 130px;
+    }
+}
+
+.github_link:hover {
+    transform: scale(1.2);
+}
+
+.githubLogo {
+    width: 50px;
+}
+
+.linkedin_link {
+    position: absolute;
+    z-index: 2;
+    bottom: 60px;
+    right: 662px;
+    transition: all 0.3s;
+
+    @include tablet-down {
+        bottom: 60px;
+        right: 315px;
+    }
+
+    @include mobile-down {
+        bottom: 60px;
+        right: 130px;
+    }
+}
+
+.linkedin_link:hover {
+    transform: scale(1.2);
+}
+
+.linkedinLogo {
+    width: 56px;
+}

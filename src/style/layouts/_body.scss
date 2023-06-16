@@ -1,0 +1,56 @@
+@import '../utils/mixin';
+@import '../utils/variables';
+@import '../base/font';
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $cream;
+}
+
+h2 {
+    font-family: 'Grooven';
+    font-size: 45px;
+    padding-bottom: 20px;
+    color: $navy;
+
+    @include tablet-down {
+        font-size: 40px;
+    }
+
+    @include mobile-down {
+        font-size: 30px;
+    }
+}
+
+.padding_section {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    @include mobile-down {
+        padding-top: 15px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.home_wrapper {
+    background-image: url('../../assets/fond3.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.anchor{
+    display: block;
+    height: 137px;
+    margin-top: -137px;
+    visibility: hidden;
+  }

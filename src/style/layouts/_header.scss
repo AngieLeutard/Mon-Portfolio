@@ -1,0 +1,179 @@
+.header_wrapper {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    height: 137px;
+    justify-content: space-between;
+    background-image: url('../../assets/damier.png');
+    background-position: center;
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba($color: $cream, $alpha: 0.5);
+    }
+}
+.flower {
+    position: absolute;
+    z-index: 2;
+}
+
+.flower1 {
+    width: 37px;
+    height: 37px;
+    right: 40px;
+    bottom: 60px;
+
+    @include tablet-down {
+        display: none;
+    }
+}
+
+.flower2 {
+    width: 50px;
+    height: 50px;
+    right: 660px;
+    bottom: 34px;
+
+    @include tablet-down {
+        width: 45px;
+        height: 45px;
+        right: 50px;
+        bottom: 70px;
+    }
+
+    @include mobile-down {
+        width: 15px;
+        height: 15px;
+        right: 280px;
+        bottom: 82px;
+    }
+}
+
+.flower3 {
+    width: 79px;
+    height: 70px;
+    right: 260px;
+    bottom: 60px;
+
+    @include mobile-down {
+        width: 46px;
+        height: 40px;
+        right: 50px;
+        bottom: 72px;
+    }
+}
+
+.flower4 {
+    width: 27px;
+    height: 27px;
+    right: 640px;
+    bottom: 80px;
+
+    @include tablet-down {
+        width: 35px;
+        height: 35px;
+        right: 170px;
+        bottom: 52px;
+    }
+
+    @include mobile-down {
+        width: 30px;
+        height: 30px;
+        right: 300px;
+        bottom: 92px;
+    }
+}
+
+.header_background {
+    width: 100%;
+}
+
+.headerLogo_wrapper {
+    display: flex;
+    align-items: flex-end;
+    width: 40%;
+    z-index: 2;
+
+    @include tablet-down {
+        width: 55%;
+    }
+
+    @include mobile-down {
+        width: 75%;
+    }
+}
+
+.header_logo {
+    width: 100%;
+}
+
+.nav_wrapper {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    padding-right: 20px;
+    width: 70%;
+    z-index: 2;
+
+    @include mobile-down {
+        display: none;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    flex-direction: row;
+    width: 100%;
+
+    @include tablet-down {
+        gap: 20px;
+    }
+}
+
+.nav_link {
+    font-family: 'Boogie';
+    text-decoration: none;
+    font-size: 33px;
+    color: $navy;
+    transition: all 0.3s;
+
+    @include tablet-down {
+        font-size: 30px;
+    }
+}
+
+.nav_link:hover {
+    color: $purple;
+    transform: scale(1.1);
+}
+
+.nav_link:focus {
+    color: $darkpink;
+}
+
+.star {
+    position: absolute;
+    z-index: 2;
+}
+
+.star1 {
+    width: 20px;
+    height: 20px;
+    bottom: 53px;
+    right: 323px;
+}
+
+.star2 {
+    width: 17px;
+    height: 24px;
+    bottom: 61px;
+    right: 335px;
+}
