@@ -1,0 +1,30 @@
+.card_wrapper {
+    display: flex;
+    justify-content: center;
+    width: 28%;
+    border-radius: 50px;
+    overflow: hidden;
+    border: $purple solid 5px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        .card_picture {
+            transform: scale(1.2);
+            transition: all 0.4s ease-in-out;
+        }
+    }
+
+    @include tablet-down {
+        border-radius: 30px;
+    }
+
+    @include mobile-down {
+        border-radius: 20px;
+        width: 40%;
+    }
+}
+
+.card_picture {
+    width: 100%;
+}
