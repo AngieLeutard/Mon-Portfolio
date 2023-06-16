@@ -1,0 +1,36 @@
+.skills_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.skillsFlower_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    @include tablet-down {
+        gap: 20px;
+    }
+
+}
+
+.skillsFlower_description {
+    font-family: 'Boogie';
+    font-size: 25px;
+    color: $purple;
+}
+
+.skills_flower {
+    width: 55%;
+
+    @include tablet-down {
+        width: 80%;
+    }
+
+    @include mobile-down {
+        width: 99%;
+    }
+}
