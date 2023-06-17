@@ -1,0 +1,39 @@
+[
+    {
+        "name": "Booki",
+        "picture": "./assets/cards_pictures/booki.png"
+    },
+    {
+        "name": "Ohmyfood",
+        "picture": "./assets/cards_pictures/ohmyfood.png"
+    },
+    {
+        "name": "Print it",
+        "picture": "./assets/cards_pictures/printit.png"
+    },
+    {
+        "name": "Sophie Bluel",
+        "picture": "./assets/cards_pictures/sophie.png"
+    },
+    {
+        "name": "Qwenta",
+        "picture": "./assets/cards_pictures/qwenta.png"
+    },
+    {
+        "name": "Kasa",
+        "picture": "./assets/cards_pictures/kasa.png"
+    },
+    {
+        "name": "Nina Carducci",
+        "picture": "./assets/cards_pictures/nina.png"
+    },
+    {
+        "name": "77events",
+        "picture": "./assets/cards_pictures/77.png"
+    },
+    {
+        "name": "Argent Bank",
+        "picture": "./assets/cards_pictures/argent.png"
+    }
+
+]

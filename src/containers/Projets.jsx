@@ -1,12 +1,20 @@
 import "../index.scss"
 
+import Projets from "../projets.json"
 import Card from "../components/Card"
 
-function Projets() {
+function SectionProjets() {
     return (
         <div className='projets_wrapper' id="about">
             <h2 className="projets_title">Mes réalisations</h2>
             <section className="projetsCards_wrapper">
+            {/* {Projets.map((projet) => (
+            <Card
+                key={`${projet.name}`}
+                picture={projet.picture}
+                title={projet.name}
+            />
+        ))} */}
                 <Card/>
                 <Card/>
                 <Card/>
@@ -21,4 +29,4 @@ function Projets() {
     )
 }
 
-export default Projets
+export default SectionProjets
