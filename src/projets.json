@@ -1,0 +1,42 @@
+[
+    {
+        "picture": "booki.png",
+        "text": "Html - CSS",
+        "outils": "Git - Github"
+    },
+    {
+        "picture": "ohmyfood.png",
+        "text": "Html - Sass",
+        "outils": "Git - Github"
+    },
+    {
+        "picture": "printit.png",
+        "text": "Html - CSS - JavaScript",
+        "outils": "Git - Github"
+    },
+    {
+        "picture": "sophie.png",
+        "text": "Html - CSS - JavaScript",
+        "outils": "Git - Github - Swagger"
+    },
+    {
+        "picture": "kasa.png",
+        "text": "Html - CSS - JavaScript - React",
+        "outils": "Git - Github"
+    },
+    {
+        "picture": "nina.png",
+        "text": "Html - CSS - JavaScript",
+        "outils": "Git - Github"
+    },
+    {
+        "picture": "77.png",
+        "text": "Html - CSS - JavaScript",
+        "outils": "Git - Github"
+    },
+    {
+        "picture": "argent.png",
+        "text": "Html - CSS - JavaScript - React - Redux",
+        "outils": "Git - Github - Swagger"
+    }
+]
