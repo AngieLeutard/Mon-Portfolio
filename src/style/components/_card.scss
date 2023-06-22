@@ -8,7 +8,7 @@
     border: $purple solid 5px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    background-color: $purple;
+    background-color: $cream;
 
     &:hover {
         background-color: $navy;
@@ -18,7 +18,7 @@
         .card_picture {
             transform: scale(1.2);
             transition: all 0.4s ease-in-out;
-            filter: opacity(5%);
+            filter: opacity(20%);
         }
 
         .card_title,
@@ -42,21 +42,29 @@
     width: 100%;
 }
 
-.card_title,
 .card_description {
     position: absolute;
-    font-family: "Grooven";
-    color: $cream;
     visibility: hidden;
     opacity: 0;
     transition: all 0.4s;
-    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .card_title {
-    top: 30px;
+    font-family: "Grooven";
+    font-size: 30px;
+    color: $purple;
+    padding-bottom: 15px;
 }
 
-.card_description {
-   
+.card_text {
+    font-family: "Boogie";
+    font-size: 25px;
+    color: $cream;
+    padding-bottom: 30px;
 }

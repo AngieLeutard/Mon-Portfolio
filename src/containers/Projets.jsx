@@ -18,30 +18,48 @@ function SectionProjets() {
             <section className="projetsCards_wrapper">
                 <Card
                     picture={ booki }
+                    text={ 'Html - CSS' }
+                    outils={ 'Git - Github' }
                 />
                 <Card
                     picture={ ohmyfood }
+                    text={ 'Html - Sass' }
+                    outils={ 'Git - Github' }
                 />
                 <Card
                     picture={ printit }
+                    text={ 'Html - CSS - JavaScript' }
+                    outils={ 'Git - Github' }
                 />
                 <Card
                     picture={ sophie }
+                    text={ 'Html - CSS - JavaScript' }
+                    outils={ 'Git - Github - Swagger' }
                 />
-                <Card
+                {/* <Card
                     picture={ qwenta }
-                />
+                    text={ 'Html - CSS' }
+                    outils={ 'Git - Github' }
+                /> */}
                 <Card
                     picture={ kasa }
+                    text={ 'Html - CSS - JavaScript - React' }
+                    outils={ 'Git - Github' }
                 />
                 <Card
                     picture={ nina }
+                    text={ 'Html - CSS - JavaScript' }
+                    outils={ 'Git - Github' }
                 />
                 <Card
                     picture={ event }
+                    text={ 'Html - CSS - JavaScript' }
+                    outils={ 'Git - Github' }
                 />
                 <Card
                     picture={ bank }
+                    text={ 'Html - CSS - JavaScript - React - Redux' }
+                    outils={ 'Git - Github - Swagger' }
                 />
             </section>
         </div>

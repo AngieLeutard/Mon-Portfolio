@@ -12,10 +12,10 @@ import star2 from '../assets/fleurs/star2.png';
 function Header() {
     return (
         <div className='header_wrapper'>
-            <img className='flower flower1' alt="flower icon" src={ fleur } />
-            <img className='flower flower2' alt="flower icon" src={ fleur2 } />
-            <img className='flower flower3' alt="flower icon" src={ fleur3 } />
-            <img className='flower flower4' alt="flower icon" src={ fleur4 } />
+            <img className='flower1' alt="flower icon" src={ fleur } />
+            <img className='flower2' alt="flower icon" src={ fleur2 } />
+            <img className='flower3' alt="flower icon" src={ fleur3 } />
+            <img className='flower4' alt="flower icon" src={ fleur4 } />
             <Link className='headerLogo_wrapper' to="/">
                 <img className='header_logo' src={ logoAL } alt="logo" />
             </Link>
