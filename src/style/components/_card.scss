@@ -1,17 +1,24 @@
 .card_wrapper {
+    position: relative;
     display: flex;
     justify-content: center;
     width: 28%;
     border-radius: 50px;
     overflow: hidden;
     border: $purple solid 5px;
-    transition: all 0.2s ease-in-out;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-color: $purple;
 
     &:hover {
+        background-color: $navy;
+        transform: scale(1.1);
+        border-color: $navy;
+
         .card_picture {
             transform: scale(1.2);
             transition: all 0.4s ease-in-out;
+            filter: opacity(5%);
         }
     }
 
@@ -27,4 +34,12 @@
 
 .card_picture {
     width: 100%;
+}
+
+.card_text {
+    position: absolute;
+    top: 20px;
+    font-family: "Boogie";
+    color: $cream;
+    font-size: 35px;
 }
