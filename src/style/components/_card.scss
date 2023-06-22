@@ -5,7 +5,6 @@
     width: 28%;
     border-radius: 50px;
     overflow: hidden;
-    border: $purple solid 5px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     background-color: $cream;
@@ -60,6 +59,15 @@
     font-size: 30px;
     color: $purple;
     padding-bottom: 15px;
+
+    @include tablet-down {
+        font-size: 19px;
+        padding-bottom: 5px;
+    }
+
+    @include mobile-down {
+        font-size: 15px;
+    }
 }
 
 .card_text {
@@ -67,4 +75,13 @@
     font-size: 25px;
     color: $cream;
     padding-bottom: 30px;
+
+    @include tablet-down {
+        font-size: 13px;
+        padding-bottom: 15px;
+    }
+
+    @include mobile-down {
+        font-size: 10px;
+    }
 }

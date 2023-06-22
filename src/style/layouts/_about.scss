@@ -11,7 +11,7 @@
     align-items: center;
     width: 100%;
     padding-top: 30px;
-    gap: 50px;
+    gap: 100px;
 
     @include mobile-down {
         gap: 30px;
@@ -19,8 +19,7 @@
 }
 
 .about_picture {
-    width: 30%;
-    border: $pink solid 3px;
+    width: 25%;
     border-radius: 50%;
 
     @include mobile-down {
@@ -30,8 +29,9 @@
 
 .about_description {
     font-family: 'Boogie';
-    font-size: 25px;
-    color: $purple;
+    font-size: 35px;
+    color: $navy;
+    width: 45%;
 
     @include mobile-down {
         width: 40%;

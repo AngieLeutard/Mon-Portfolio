@@ -7,7 +7,7 @@ function Skills() {
             <h2 className="about_title">Qui suis-je ?</h2>
             <section className="aboutDetails_wrapper">
                 <img src={ aboutPicture } alt="aboutPicture" className="about_picture" />
-                <p className="about_description">Langages et outils que j'utilise.</p>
+                <p className="about_description">Hello !<br/><br/>Moi c'est Angie, j'ai 28 ans et je suis passionnée par le développement web.<br/><br/>Je travaille avec différents outils et langages comme React, JavaScript ou encore Github.<br/><br/>Je vous souhaite la bienvenue ici !</p>
             </section>
         </div>
     )
