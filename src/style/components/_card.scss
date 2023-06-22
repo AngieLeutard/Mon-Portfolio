@@ -20,6 +20,12 @@
             transition: all 0.4s ease-in-out;
             filter: opacity(5%);
         }
+
+        .card_title,
+        .card_description {
+            visibility: visible;
+            opacity: 1;
+        }
     }
 
     @include tablet-down {
@@ -36,10 +42,21 @@
     width: 100%;
 }
 
-.card_text {
+.card_title,
+.card_description {
     position: absolute;
-    top: 20px;
-    font-family: "Boogie";
+    font-family: "Grooven";
     color: $cream;
-    font-size: 35px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s;
+    font-size: 20px;
+}
+
+.card_title {
+    top: 30px;
+}
+
+.card_description {
+   
 }

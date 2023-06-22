@@ -6,7 +6,10 @@ function Card({picture, title}) {
     return (
         <div className="card_wrapper">
             <img src={ picture } alt="cardPicture" className="card_picture" />
-            <p className="card_text">Langages & Outils</p>
+            <h3 className="card_title">Langages & Outils</h3>
+            <section className="card_description">
+                
+            </section>
         </div>
     )
 }
