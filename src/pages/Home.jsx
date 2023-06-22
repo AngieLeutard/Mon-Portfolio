@@ -3,6 +3,7 @@ import "../index.scss"
 import Skills from '../containers/Skills'
 import About from '../containers/About'
 import Projets from '../containers/Projets'
+import Contact from '../containers/Contact'
 
 function Home() {
     return (
@@ -21,7 +22,9 @@ function Home() {
           <Skills/>
         </section>
         <span className="anchor" id="contact"></span>
-        <section className="contact_section"></section>
+        <section className="contact_section">
+          <Contact/>
+        </section>
       </div>
     );
   }

@@ -55,3 +55,13 @@ h2 {
     margin-top: -137px;
     visibility: hidden;
   }
+
+  .about_wrapper,
+  .projets_wrapper,
+  .skills_wrapper,
+  .contact_wrapper  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
