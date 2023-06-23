@@ -12,6 +12,7 @@ function SectionProjets() {
                     <Card
                         key={ projet.picture }
                         picture={ projet.picture }
+                        description={ projet.description }
                         text={ projet.text }
                         outils={ projet.outils }
                     />

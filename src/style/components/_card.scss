@@ -21,7 +21,7 @@
         }
 
         .card_title,
-        .card_description {
+        .card_description_wrapper {
             visibility: visible;
             opacity: 1;
         }
@@ -41,7 +41,13 @@
     width: 100%;
 }
 
-.card_description {
+.card_details {
+    font-family: 'Boogie';
+    color: $cream;
+    font-size: 28px;
+}
+
+.card_description_wrapper {
     position: absolute;
     visibility: hidden;
     opacity: 0;
@@ -52,13 +58,21 @@
     height: 100%;
     align-items: center;
     justify-content: center;
+    gap: 20px;
+}
+
+.card_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card_title {
     font-family: "Grooven";
-    font-size: 30px;
+    font-size: 22px;
     color: $purple;
-    padding-bottom: 15px;
+    padding-bottom: 7px;
 
     @include tablet-down {
         font-size: 19px;
@@ -72,9 +86,8 @@
 
 .card_text {
     font-family: "Boogie";
-    font-size: 25px;
+    font-size: 20px;
     color: $cream;
-    padding-bottom: 30px;
 
     @include tablet-down {
         font-size: 13px;

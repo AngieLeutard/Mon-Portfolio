@@ -8,7 +8,6 @@ import Contact from '../containers/Contact'
 function Home() {
     return (
       <div className="home_wrapper">
-        <section className="accueil_section padding_section"></section>
         <span className="anchor" id="about"></span>
         <section className="about_section padding_section">
           <About/>

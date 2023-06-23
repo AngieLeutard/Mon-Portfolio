@@ -1,41 +1,49 @@
 [
     {
         "picture": "booki.png",
+        "description": "Intégration d'une page d'accueil",
         "text": "Html - CSS",
         "outils": "Git - Github"
     },
     {
         "picture": "ohmyfood.png",
+        "description": "Création d'animations CSS",
         "text": "Html - Sass",
         "outils": "Git - Github"
     },
     {
         "picture": "printit.png",
+        "description": "Création d'un slider avec JavaScript",
         "text": "Html - CSS - JavaScript",
         "outils": "Git - Github"
     },
     {
         "picture": "sophie.png",
+        "description": "Dynamisation avec JavaScript",
         "text": "Html - CSS - JavaScript",
         "outils": "Git - Github - Swagger"
     },
     {
         "picture": "kasa.png",
+        "description": "Création d'une application avec React",
         "text": "Html - CSS - JavaScript - React",
         "outils": "Git - Github"
     },
     {
         "picture": "nina.png",
+        "description": "Optimisation du référencement",
         "text": "Html - CSS - JavaScript",
         "outils": "Git - Github"
     },
     {
         "picture": "77.png",
+        "description": "Débugger le site d'une agence",
         "text": "Html - CSS - JavaScript",
         "outils": "Git - Github"
     },
     {
         "picture": "argent.png",
+        "description": "Implémenter le front-end avec Redux",
         "text": "Html - CSS - JavaScript - React - Redux",
         "outils": "Git - Github - Swagger"
     }
