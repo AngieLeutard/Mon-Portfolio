@@ -10,6 +10,30 @@ import star2 from '../assets/fleurs/star2.png';
 
 
 function Header() {
+
+    const sections = document.querySelectorAll("span")
+    const navLi = document.querySelectorAll(".nav_link")
+  
+    window.onscroll = () => {
+        var current = "";
+
+        sections.forEach((section) => {
+          const y = window.scrollY;
+          const sectionTop = section.offsetTop;
+
+          if (y >= sectionTop - 137 ) {
+            current = section.getAttribute("id");
+          }
+        });
+      
+        navLi.forEach((elia) => {
+          elia.classList.remove("active");
+          if (elia.classList.contains(current)) {
+            elia.classList.add("active");
+          }
+        });
+      };
+      
     return (
         <div className='header_wrapper'>
             <img className='flower1' alt="flower icon" src={ fleur } />
@@ -20,20 +44,17 @@ function Header() {
                 <img className='header_logo' src={ logoAL } alt="logo" />
             </Link>
             <section className='nav_wrapper'>
-                <nav>
+                <nav className='navbar'>
                     <img src={ star } alt="star" className='star star1' />
                     <img src={ star2 } alt="star" className='star star2' />
-                    <a className='nav_link' href="#about">
+                    <a className='about nav_link active' href="#about">
                         À propos
                     </a>
-                    <a className='nav_link' href='#projets'>
+                    <a className='projets nav_link' href='#projets'>
                         Projets
                     </a>
-                    <a className='nav_link' href="#skills">
+                    <a className='skills nav_link' href="#skills">
                         Compétences
-                    </a>
-                    <a className='nav_link' href='#contact'>
-                        Contact
                     </a>
                 </nav>
             </section>

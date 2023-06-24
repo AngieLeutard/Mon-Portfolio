@@ -53,6 +53,11 @@ h2 {
     height: 137px;
     margin-top: -137px;
     visibility: hidden;
+
+    @include mobile-down {
+        height: 60px;
+        margin-top: -60px;
+    }
   }
 
   .about_wrapper,

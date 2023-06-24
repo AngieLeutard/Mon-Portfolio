@@ -7,8 +7,16 @@
     padding-top: 30px;
     gap: 100px;
 
+    @include tablet-down {
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 0;
+    }
+
     @include mobile-down {
-        gap: 30px;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 0;
     }
 }
 
@@ -16,8 +24,8 @@
     width: 25%;
     border-radius: 50px;
 
-    @include mobile-down {
-        width: 40%;
+    @include tablet-down {
+        width: 50%;
     }
 }
 
@@ -27,7 +35,14 @@
     color: $navy;
     width: 45%;
 
+    @include tablet-down {
+        width: 90%;
+        text-align: center;
+    }
+
     @include mobile-down {
-        width: 40%;
+        width: 90%;
+        font-size: 20px;
+        text-align: center;
     }
 }

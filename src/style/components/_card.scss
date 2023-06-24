@@ -28,11 +28,12 @@
 
     @include tablet-down {
         border-radius: 30px;
+        width: 40%;
     }
 
     @include mobile-down {
         border-radius: 20px;
-        width: 40%;
+        width: 70%;
     }
 }
 

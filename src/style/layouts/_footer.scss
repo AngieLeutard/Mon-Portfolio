@@ -20,6 +20,10 @@
         background: rgba($color: $cream, $alpha: 0.5);
         z-index: 1;
     }
+
+    @include mobile-down {
+        height: 150px;
+    }
 }
 
 .footer_text {
@@ -29,6 +33,10 @@
     color: $navy;
     font-size: 20px;
     bottom: 15px;
+
+    @include mobile-down {
+        font-size: 15px;
+    }
 }
 
 .github_link {

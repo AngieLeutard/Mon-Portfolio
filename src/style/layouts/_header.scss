@@ -18,6 +18,10 @@
         bottom: 0;
         background: rgba($color: $cream, $alpha: 0.5);
     }
+
+    @include mobile-down {
+        height: 60px;
+    }
 }
 
 .flower1,
@@ -55,8 +59,8 @@
     @include mobile-down {
         width: 15px;
         height: 15px;
-        right: 280px;
-        bottom: 82px;
+        right: 180px;
+        bottom: 30px;
     }
 }
 
@@ -67,10 +71,10 @@
     bottom: 60px;
 
     @include mobile-down {
-        width: 46px;
-        height: 40px;
+        width: 23px;
+        height: 20px;
         right: 50px;
-        bottom: 72px;
+        bottom: 32px;
     }
 }
 
@@ -88,10 +92,10 @@
     }
 
     @include mobile-down {
-        width: 30px;
-        height: 30px;
-        right: 300px;
-        bottom: 92px;
+        width: 10px;
+        height: 10px;
+        right: 90px;
+        bottom: 32px;
     }
 }
 
@@ -110,7 +114,7 @@
     }
 
     @include mobile-down {
-        width: 75%;
+        width: 45%;
     }
 }
 
@@ -125,10 +129,6 @@
     padding-right: 20px;
     width: 70%;
     z-index: 2;
-
-    @include mobile-down {
-        display: none;
-    }
 }
 
 nav {
@@ -153,6 +153,10 @@ nav {
     @include tablet-down {
         font-size: 30px;
     }
+
+    @include mobile-down {
+        font-size: 18px;
+    }
 }
 
 .nav_link:hover {
@@ -160,7 +164,7 @@ nav {
     transform: scale(1.1);
 }
 
-.nav_link:focus {
+.active {
     color: $darkpink;
 }
 
