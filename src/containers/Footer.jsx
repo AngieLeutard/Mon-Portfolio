@@ -9,7 +9,7 @@ function Footer() {
     return (
         <footer className="footer_wrapper">
             <div>
-            <Link target='_blank'className='github_link' to="https://github.com/AngieLeutard">
+            <Link target='_blank' className='github_link' to="https://github.com/AngieLeutard">
                 <img className='githubLogo' src={ github } alt="logo" />
             </Link>
             <Link target='_blank' className='linkedin_link' to="https://www.linkedin.com/in/angie-leutard-319ba7109/">

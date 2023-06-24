@@ -4,6 +4,7 @@ import Card from "../components/Card"
 import Projets from "../projets.json"
 
 function SectionProjets() {
+    
     return (
         <div className='projets_wrapper' id="about">
             <h2 className="projets_title">Mes réalisations</h2>
@@ -15,6 +16,8 @@ function SectionProjets() {
                         description={ projet.description }
                         text={ projet.text }
                         outils={ projet.outils }
+                        GithubLink={ projet.githubLink }
+                        WebLink={ projet.webLink }
                     />
                 ))}
             </section>

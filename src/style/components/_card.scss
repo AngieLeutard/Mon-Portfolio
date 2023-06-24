@@ -5,7 +5,6 @@
     width: 28%;
     border-radius: 50px;
     overflow: hidden;
-    cursor: pointer;
     transition: all 0.2s ease-in-out;
     background-color: $cream;
 
@@ -45,6 +44,7 @@
     font-family: 'Boogie';
     color: $cream;
     font-size: 28px;
+    pointer-events: none;
 }
 
 .card_description_wrapper {
@@ -58,7 +58,7 @@
     height: 100%;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .card_description {
@@ -73,6 +73,7 @@
     font-size: 22px;
     color: $purple;
     padding-bottom: 7px;
+    pointer-events: none;
 
     @include tablet-down {
         font-size: 19px;
@@ -88,6 +89,7 @@
     font-family: "Boogie";
     font-size: 20px;
     color: $cream;
+    pointer-events: none;
 
     @include tablet-down {
         font-size: 13px;
@@ -96,5 +98,27 @@
 
     @include mobile-down {
         font-size: 10px;
+    }
+}
+
+.card_icon_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.card_icon_link {
+    width: 10%;
+    cursor: pointer;
+}
+
+.card_icon {
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: all 0.4s ease-in-out;
     }
 }
