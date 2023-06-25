@@ -26,10 +26,10 @@ function Header() {
           }
         });
       
-        navLi.forEach((elia) => {
-          elia.classList.remove("active");
-          if (elia.classList.contains(current)) {
-            elia.classList.add("active");
+        navLi.forEach((a) => {
+          a.classList.remove("active");
+          if (a.classList.contains(current)) {
+            a.classList.add("active");
           }
         });
       };
