@@ -45,8 +45,8 @@ function Header() {
             </Link>
             <section className='nav_wrapper'>
                 <nav className='navbar'>
-                    <img src={ star } alt="star" className='star star1' />
-                    <img src={ star2 } alt="star" className='star star2' />
+                    <img src={ star } alt="star" className='star1' />
+                    <img src={ star2 } alt="star" className='star2' />
                     <a className='about nav_link active' href="#about">
                         À propos
                     </a>

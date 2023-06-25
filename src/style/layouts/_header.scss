@@ -176,9 +176,14 @@ nav {
     }
 }
 
-.star {
+.star1,
+.star2 {
     position: absolute;
     z-index: 2;
+
+    @include mobile-down {
+        display: none;
+    }
 }
 
 .star1 {
