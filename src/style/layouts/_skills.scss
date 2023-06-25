@@ -14,6 +14,10 @@
     font-family: 'Boogie';
     font-size: 25px;
     color: $navy;
+
+    @include mobile-down {
+        font-size: 20px;
+    }
 }
 
 .skills_flower {
