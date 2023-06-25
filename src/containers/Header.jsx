@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 import logoAL from '../assets/logoAngie/AngieLeutard.png';
 import fleur from '../assets/fleurs/fleur.png';
@@ -8,31 +9,35 @@ import fleur4 from '../assets/fleurs/fleur4.png';
 import star from '../assets/fleurs/star.png';
 import star2 from '../assets/fleurs/star2.png';
 
-
 function Header() {
 
+  const [scrollLevel, setScrollLevel] = useState(window.scrollY)
+
+  useEffect(() => {
     const sections = document.querySelectorAll("span")
     const navLi = document.querySelectorAll(".nav_link")
   
     window.onscroll = () => {
         var current = "";
-
+        
         sections.forEach((section) => {
-          const y = window.scrollY;
-          const sectionTop = section.offsetTop;
+            const y = window.scrollY;
+            const sectionTop = section.offsetTop;
 
-          if (y >= sectionTop - 137 ) {
+            if (y >= sectionTop - 137 ) {
             current = section.getAttribute("id");
-          }
+            }
         });
-      
+        
         navLi.forEach((a) => {
-          a.classList.remove("active");
-          if (a.classList.contains(current)) {
+            a.classList.remove("active");
+            if (a.classList.contains(current)) {
             a.classList.add("active");
-          }
+            }
         });
-      };
+    };
+    setScrollLevel(window.scrollY)
+  }, [scrollLevel]);
       
     return (
         <div className='header_wrapper'>
