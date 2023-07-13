@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 
 import logoAL from '../assets/logoAngie/AngieLeutard.png';
 import fleur from '../assets/fleurs/fleur.png';
@@ -10,8 +10,6 @@ import star from '../assets/fleurs/star.png';
 import star2 from '../assets/fleurs/star2.png';
 
 function Header() {
-
-  const [scrollLevel, setScrollLevel] = useState(window.scrollY)
 
   useEffect(() => {
     const sections = document.querySelectorAll("span")
@@ -36,8 +34,7 @@ function Header() {
             }
         });
     };
-    setScrollLevel(window.scrollY)
-  }, [scrollLevel]);
+  }, []);
       
     return (
         <div className='header_wrapper'>
